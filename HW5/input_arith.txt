@@ -1,0 +1,6 @@
+; Good inputs: 5, -42, +65 
+; Bad inputs: groot, k9, t, nil, 0
+(progn
+ (print "Enter something: ")
+ (/ 200 (input))
+)

@@ -1,0 +1,6 @@
+(print 
+ (progn 
+   "cheeseburger" "fries" "shake"
+  )
+)
+
