@@ -628,9 +628,9 @@ N_INPUT_EXPR :  T_INPUT
 				else
 				{
 					$$.type = STR;
-					// ugly code but it wouldn't let me assign it any othe rway
-					char* temp;
-					strcpy(temp, readIn.c_str());
+					// ugly code but it wouldn't let me assign it any other fway
+					char* temp = (char*)readIn.c_str();
+					// strcpy(temp, readIn.c_str());
 					$$.stringValue = temp;
 				}
 				// printRule("INPUT_EXPR", "INPUT");
@@ -788,9 +788,9 @@ void printStringEnding(const char* s, const int end)
 void printIntegerEnding(const int i, const int end)
 {
 	if(end)
-		printf("\nValue of the expression is: %u\n", i);
+		printf("\nValue of the expression is: %d\n", i);
 	else
-		printf("%u",i);
+		printf("%d",i);
 }
 void printBooleanEnding(const int b, const int end)
 {
